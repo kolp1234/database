@@ -16,12 +16,11 @@ import tempfile
 import os
 
 
-config = dotenv_values("./.env")
-username = config.get("DATABASE_USERNAME")
-password = config.get("DATABASE_PASSWORD")
-dbname = config.get("DATABASE_NAME")
-port = config.get("DATABASE_PORT")
-host = config.get("DATABASE_HOST")
+username = st.secrets("DATABASE_USERNAME")
+password = st.secrets("DATABASE_PASSWORD")
+dbname = st.secrets("DATABASE_NAME")
+port = st.secrets("DATABASE_PORT")
+host = st.secrets("DATABASE_HOST")
 
 DATABASE_URL = f"postgresql+psycopg2://{username}:{password}@{host}:{port}/{dbname}"
 
