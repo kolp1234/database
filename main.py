@@ -15,12 +15,11 @@ from datetime import datetime
 import tempfile
 import os
 
-
-username = st.secrets("DATABASE_USERNAME")
-password = st.secrets("DATABASE_PASSWORD")
-dbname = st.secrets("DATABASE_NAME")
-port = st.secrets("DATABASE_PORT")
-host = st.secrets("DATABASE_HOST")
+username = st.secrets["DATABASE_USERNAME"]
+password = st.secrets["DATABASE_PASSWORD"]
+dbname = st.secrets["DATABASE_NAME"]
+port = st.secrets["DATABASE_PORT"]
+host = st.secrets["DATABASE_HOST"]
 
 DATABASE_URL = f"postgresql+psycopg2://{username}:{password}@{host}:{port}/{dbname}"
 
