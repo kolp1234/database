@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "landbh"
+version = "0.1.0"
+description = ""
+authors = ["Janessa Pandiyan"]
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^2.2.0"
+pandas = "^2.2.3"
+sqlalchemy = "^2.0.36"
+streamlit = "^1.40.2"
+psycopg2-binary = "^2.9.10"
+python-dotenv = "^1.0.1"
+alembic = "^1.14.0"
+selenium = "^4.27.1"
+webdriver-manager = "^4.0.2"
+undetected-chromedriver = "^3.5.5"
+bs4 = "^0.0.2"
+scrapy-selenium = "^0.0.7"
+scrapy = "^2.12.0"
+scikit-learn = "^1.6.0"
+requests = "^2.32.3"
+requests-html = "^0.10.0"
+openpyxl = "^3.1.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
