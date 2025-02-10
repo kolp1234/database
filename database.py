@@ -1,3 +1,4 @@
+import streamlit as st
 from sqlalchemy import ForeignKey, create_engine, Column, Integer, String, Float, Boolean, Date, BigInteger, Enum
 from sqlalchemy.orm import relationship, sessionmaker
 from dotenv import dotenv_values
